@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.featured-phones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.phone-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.phone-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.phone-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.phone-card p {
+    color: #555;
+}
+
+.phone-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.phone-card button:hover {
+    background-color: #45a049;
+}
