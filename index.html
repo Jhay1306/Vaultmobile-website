@@ -5,122 +5,133 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Vault Mobile - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <header class="container header">
-    <div class="brand">
-        <div class="logo">V</div>
-        <div>
-            <h1>Vault Mobile</h1>
-            <div class="brand-sub">Curated luxury phones</div>
-        </div>
-    </div>
-    <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="product.html">Phones</a>
-        <a href="#about" class="cta">About</a>
-    </nav>
+	<div class="brand">
+		<div class="logo">V</div>
+		<div>
+			<h1>Vault Mobile</h1>
+			<div class="brand-sub">Curated luxury phones</div>
+		</div>
+	</div>
+	<nav class="nav">
+		<a href="#home" class="cta">Home</a>
+		<a href="product.html">Shop</a>
+		<a href="#about">About</a>
+	</nav>
 </header>
 
 <main class="container">
-    <section id="home" class="hero section">
-        <div class="hero-content">
-            <h2>Vault Mobile — Designed to Delight</h2>
-            <p class="small">Luxury, reimagined for everyday use. We curate and refine classic designs, pairing premium materials with thoughtful service so your phone feels personal and timeless.</p>
-            <div class="hero-cta">
-                <a class="btn primary" href="#feature">Shop Feature Phones</a>
-                <a class="btn secondary" href="#about">About Us</a>
-            </div>
-        </div>
-        <div class="showcase-card">
-            <div class="phone-visual">The Vault One</div>
-            <div class="title">Vault One — Limited Edition</div>
-            <div class="small">Handpicked materials and concierge setup.</div>
-            <a class="btn" href="#feature">View Phones</a>
-        </div>
-    </section>
-    <section id="feature" class="feature-section">
-        <h3>Feature Phones</h3>
-        <p class="small">Curated models that focus on beautiful design and essential functionality.</p>
+    <section id="home" class="hero section reveal">
+		<div class="hero-content">
+			<h2>Unlock the Power of Mobile Technology</h2>
+			<p class="small">Experience premium design, curated performance, and concierge-level service. Vault Mobile selects the most refined phones and pairs them with an elevated ownership experience.</p>
+			<div class="hero-cta">
+				<a class="btn primary" href="#feature">Shop Now</a>
+				<a class="btn" href="#feature" style="background:transparent;border:1px solid rgba(30,64,175,0.06);margin-left:12px;color:var(--accent-2)">Explore All</a>
+			</div>
+
+			<!-- Quick brand links -->
+			<div class="brand-chips" style="margin-top:20px">
+				<a href="product.html#Apple" class="chip">Apple</a>
+				<a href="product.html#Samsung" class="chip">Samsung</a>
+				<a href="product.html#Vivo" class="chip">Vivo</a>
+				<a href="product.html#Xiaomi" class="chip">Xiaomi</a>
+                <a href="product.html#ZTE" class="chip">ZTE</a>
+			</div>
+		</div>
+
+		<!-- hero mockup image -->
+		<div class="showcase-card" aria-hidden="false">
+			<div class="title">Vault One — Limited Edition</div>
+			<div class="small">Handpicked materials and concierge setup.</div>
+			<a class="btn" href="#feature" style="align-self:center;margin-top:12px">View Phones</a>
+		</div>
+	</section>
+
+    <section id="feature" class="feature-section reveal">
+        <h3>Featured Phones</h3>
+        <p class="small">A curated selection of our best devices.</p>
         <div class="feature-grid">
             <div class="card">
                 <img class="thumb" src="img/ip%2017%20pro%20max.png" alt="iP 17 Pro Max">
-                <div style="font-weight:700">iP 17 Pro Max</div>
+                <div class="product-title" style="font-weight:700">iPhone 17 Pro Max</div>
                 <div class="small">Brushed metal, tactile keys, long battery life.</div>
             </div>
             <div class="card">
                 <img class="thumb" src="img/samsung%20s25%20ultra.png" alt="Samsung S25 Ultra">
-                <div style="font-weight:700">Samsung S25 Ultra</div>
+                <div class="product-title" style="font-weight:700">Samsung S25 Ultra</div>
                 <div class="small">Sleek matte finish with refined ergonomics.</div>
             </div>
             <div class="card">
                 <img class="thumb" src="img/vivo%20v60.png" alt="Vivo V60">
-                <div style="font-weight:700">Vivo V60</div>
+                <div class="product-title" style="font-weight:700">Vivo V60</div>
                 <div class="small">Premium accents and bespoke packaging.</div>
             </div>
         </div>
     </section>
     <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>At Vault Mobile, we believe a phone is more than just a device — it's a daily companion that should inspire confidence, creativity, and connection. Our journey began with a simple idea: to craft mobile experiences that merge timeless design with cutting-edge performance.</p>
-                <p>We partner with visionary designers and source only premium materials to create products that feel as good as they look. From personalized setup to elegant packaging, every detail is thoughtfully refined to deliver an exceptional ownership experience.</p>
-            </div>
-            <aside class="dev-card">
-                <div class="dev-photo">
-                    <img src="dev.jpg" alt="Developer Photo">
+        <div class="section-container">
+            <h2>About Us</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>At Vault Mobile, we believe a phone is more than just a device — it's a daily companion that should inspire confidence, creativity, and connection. Our journey began with a simple idea: to craft mobile experiences that merge timeless design with cutting-edge performance.</p>
+                    <p>We partner with visionary designers and source only premium materials to create products that feel as good as they look. From personalized setup to elegant packaging, every detail is thoughtfully refined to deliver an exceptional ownership experience.</p>
                 </div>
-                <div class="dev-info">
-                    <h4>Jimrex A. Del Socorro (Developer)</h4>
-                    <div class="role">LFCA211E074 - OLWS01</div>
-                    <div class="bio small">Designs and builds elegant, minimal interfaces. Passionate about refined product experiences and performance.</div>
-                    <div class="dev-actions">
-                        <a href="mailto:jimrexdelsocorro13@gmail.com">Email</a>
-                        <a href="https://github.com/Jhay1306" target="_blank" rel="noopener">GitHub</a>
+                <aside class="dev-card">
+                    <div class="dev-photo">
+                        <img src="dev.jpg" alt="Developer Photo">
                     </div>
-                </div>
-            </aside>
+                    <div class="dev-info">
+                        <h4>Jimrex A. Del Socorro (Developer)</h4>
+                        <div class="role">LFCA211E074 - OLWS01</div>
+                        <div class="bio small">Designs and builds elegant, minimal interfaces. Passionate about refined product experiences and performance.</div>
+                        <div class="dev-actions">
+                            <a href="mailto:jimrexdelsocorro13@gmail.com">Email</a>
+                            <a href="https://github.com/Jhay1306" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </div>
     </section>
-
     <footer class="footer">
-        <div class="footer-brand">
-            <div class="logo">V</div>
+        <div class="footer-inner">
+            <div class="brand-block">
+                <div class="logo">V</div>
+                <div>
+                    <div style="font-weight:700">Vault Mobile</div>
+                    <div class="small">Curated luxury phones</div>
+                </div>
+            </div>
+
+            <div class="links">
+                <strong style="margin-bottom:8px;display:block">Navigate</strong>
+                <a href="#home">Home</a>
+                <a href="#feature">Featured</a>
+                <a href="product.html">Shop</a>
+                <a href="#about">About</a>
+            </div>
+
             <div>
-                <div class="title">Vault Mobile</div>
-                <div class="small">Curated luxury phones</div>
+                <strong style="display:block;margin-bottom:8px">Contact & Social</strong>
+                <div class="small">support@vaultmobile.example</div>
+                <div class="socials" style="margin-top:12px">
+                    <a href="#" aria-label="Twitter">T</a>
+                    <a href="#" aria-label="Instagram">I</a>
+                    <a href="#" aria-label="GitHub">G</a>
+                </div>
             </div>
         </div>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#feature">Feature Phones</a>
-            <a href="#about">About</a>
-            <a href="#">Contact</a>
+
+        <div class="copyright">
+            &copy; 2025 Vault Mobile — All rights reserved.
         </div>
     </footer>
 </main>
-
-<!-- Add Cart Button and Sidebar -->
-<button id="cart-toggle" class="cart-toggle">
-    Cart (<span id="cart-count">0</span>)
-</button>
-
-<aside id="cart-sidebar" aria-hidden="true">
-    <div class="cart-header">
-        <h3>Your Cart</h3>
-        <button class="btn" id="cart-close">×</button>
-    </div>
-    <div id="cart-items"></div>
-    <div class="cart-footer">
-        <div class="cart-total">
-            Total: <span id="cart-total">₱0.00</span>
-        </div>
-        <button class="btn primary" id="checkout-btn">Checkout</button>
-    </div>
-</aside>
-
 <script src="index.js"></script>
 </body>
 </html>

@@ -7,6 +7,8 @@
     <!-- Use same base styles as index + product-specific rules -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="product.css">
+    <!-- Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header: match index layout -->
@@ -21,7 +23,7 @@
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="product.html" class="cta">Phones</a>
-            <a href="#about">About</a>
+            <a href="index.html#about">About</a>
         </nav>
     </header>
 
@@ -29,7 +31,15 @@
         <!-- Products will be rendered here by product.js -->
         <section id="products-list" class="section">
             <h2 style="font-family:'Playfair Display',serif;margin-top:0">All Products</h2>
-            <p class="small">Browse curated phones grouped by brand.</p>
+            <div class="product-controls" style="display:flex;gap:12px;align-items:center;margin-top:8px">
+                <input id="product-search" type="search" placeholder="Search phones..." style="flex:1;padding:10px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);color:inherit">
+                <select id="product-sort" style="padding:10px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);color:inherit">
+                    <option value="">Sort</option>
+                    <option value="price-asc">Price: Low → High</option>
+                    <option value="price-desc">Price: High → Low</option>
+                    <option value="brand">Brand</option>
+                </select>
+            </div>
 
             <!-- JS injects brand sections inside this container -->
             <div id="products-root" style="margin-top:16px"></div>
@@ -56,7 +66,29 @@
             </div>
         </div>
     </aside>
-\
+
+    <!-- Product detail modal -->
+    <div id="product-modal" class="modal" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div id="modal-images">
+                <!-- image stack injected by JS -->
+            </div>
+            <div id="modal-info">
+                <h3 id="modal-title"></h3>
+                <div id="modal-price" class="small" style="font-weight:800;margin:6px 0"></div>
+                <p id="modal-desc" class="small"></p>
+                <div style="margin-top:12px;display:flex;gap:8px">
+                    <button id="modal-add" class="btn add-btn">Add to cart</button>
+                    <button id="modal-buy" class="btn buy-btn">Buy now</button>
+                </div>
+                <hr style="margin:16px 0;border-color:rgba(255,255,255,0.04)">
+                <h4 style="margin:0 0 8px">You may also like</h4>
+                <div id="modal-reco" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="product.js"></script>
 </body>
 </html>
